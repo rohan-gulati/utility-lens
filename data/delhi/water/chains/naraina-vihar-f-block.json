@@ -1,0 +1,16 @@
+{
+  "id": "naraina-vihar-f-block",
+  "label": "F Block, Naraina Vihar",
+  "sublabel": "New Delhi 110028 · ACE (M)-5 · AC 38 Delhi Cantonment",
+  "utility": "water",
+  "pin": [77.1417, 28.6268],
+  "hopIds": [
+    "catchment-yamuna-wjc",
+    "conveyance-munak-clc",
+    "wtp-haiderpur",
+    "ugr-naraina-cantt",
+    "dma-naraina-vihar",
+    "service-f-block",
+    "storage-house-tank"
+  ]
+}

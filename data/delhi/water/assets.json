@@ -1,0 +1,357 @@
+[
+  {
+    "id": "catchment-yamuna-wjc",
+    "name": "Yamuna at Tajewala / Hathnikund",
+    "utility": "water",
+    "kind": "catchment",
+    "position": [
+      77.5556,
+      30.3607
+    ],
+    "confidence": "documented",
+    "sourceIds": [
+      "djb-mohua-ppt"
+    ],
+    "operator": "Haryana Irrigation / BBMB",
+    "narrative": "Your water starts about 180 km north of your house, where the Yamuna is diverted out of its own bed into the Western Yamuna Canal. Delhi's surface supply is not really a river supply — it is a canal supply that Haryana turns on.",
+    "facts": [
+      {
+        "label": "Delhi's Yamuna allocation",
+        "value": "≈750 cusecs",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Ravi-Beas via BBMB",
+        "value": "≈496 cusecs (ex-Nangal)",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Total raw surface water",
+        "value": "≈1,746 cusecs across all three sources",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ],
+        "note": "Figure as of the DJB deck, c. 2011."
+      }
+    ],
+    "pendingNote": "Position is the Hathnikund/Tajewala headworks. The precise offtake feeding Haiderpur is not separately documented here."
+  },
+  {
+    "id": "conveyance-munak-clc",
+    "name": "Munak Canal / Carrier Lined Channel",
+    "utility": "water",
+    "kind": "conveyance",
+    "position": [
+      76.9667,
+      29.4167
+    ],
+    "confidence": "documented",
+    "sourceIds": [
+      "djb-mohua-ppt"
+    ],
+    "operator": "Haryana / Delhi Jal Board",
+    "narrative": "The canal that carries the water down to Delhi. It was lined in concrete precisely because so much was being lost on the way — DJB paid Haryana ₹380 crore for a 102 km lined channel to cut en-route losses from 30-40% down to 10-15%. A third of your water used to disappear before it reached the city.",
+    "facts": [
+      {
+        "label": "En-route loss, unlined",
+        "value": "30-40% of raw water",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Target loss, lined",
+        "value": "10-15%",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Carrier Lined Canal",
+        "value": "102 km, ≈₹500 crore",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wtp-haiderpur",
+    "name": "Haiderpur WTP I & II",
+    "utility": "water",
+    "kind": "treatment",
+    "position": [
+      77.1374043,
+      28.7239979
+    ],
+    "confidence": "inferred",
+    "sourceIds": [
+      "djb-mohua-ppt",
+      "osm-overpass-2026-09"
+    ],
+    "operator": "Delhi Jal Board",
+    "narrative": "The plant that most likely treats your water. Haiderpur is the west-and-north-west Delhi plant — DJB runs its west Delhi water-quality laboratory here — and it is the nearest large plant on the Western Yamuna Canal side of the system. But DJB has never published the WTP command-area boundary that would settle it, so this hop names a likely plant, not a known one.",
+    "facts": [
+      {
+        "label": "Capacity",
+        "value": "200 MGD (Haiderpur I & II combined)",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Raw water source",
+        "value": "Western Yamuna Canal, via Munak",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Zonal water-quality lab",
+        "value": "Serves West Delhi and North-West Delhi",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ],
+        "note": "The strongest published hint that Haiderpur is the west-Delhi plant — but a laboratory catchment is not a supply command area."
+      },
+      {
+        "label": "Is this YOUR plant?",
+        "value": "Unresolved",
+        "confidence": "inferred",
+        "sourceIds": [],
+        "note": "Named as the most likely of three candidates. Not established."
+      },
+      {
+        "label": "Location",
+        "value": "28.7240° N, 77.1374° E",
+        "confidence": "documented",
+        "sourceIds": [
+          "osm-overpass-2026-09"
+        ]
+      }
+    ],
+    "candidates": [
+      {
+        "name": "Haiderpur WTP (200 MGD)",
+        "note": "Most likely. West/north-west Delhi plant on the WJC side; DJB's west Delhi zonal lab sits here."
+      },
+      {
+        "name": "Chandrawal WTP (90 MGD)",
+        "note": "One search result placed Naraina in the 'Chandrawal project area'. Unverified, and Chandrawal is the central-Delhi plant."
+      },
+      {
+        "name": "Wazirabad WTP (120 MGD)",
+        "note": "Feeds parts of central and west Delhi. Cannot be excluded without the command-area map."
+      }
+    ],
+    "pendingNote": "Resolved by DJB's WTP command-area map (referenced as 'TCE 2011' in the DJB deck but not reproduced legibly in it), or by the ACE (M)-5 zonal timing sheet naming the source for the Naraina reservoir."
+  },
+  {
+    "id": "ugr-naraina-cantt",
+    "name": "Naraina Cantt UGR / Booster Pumping Station",
+    "utility": "water",
+    "kind": "reservoir",
+    "position": [
+      77.1428,
+      28.619
+    ],
+    "confidence": "inferred",
+    "sourceIds": [
+      "djb-mohua-ppt",
+      "djb-timing-index"
+    ],
+    "operator": "Delhi Jal Board",
+    "narrative": "This is the hop that decides when your taps run. Under DJB's three-tier model the treatment plant does not feed your house — it fills an underground reservoir, and your block is pumped from there on a fixed morning and evening schedule. Everything upstream of here is a continuous system; everything downstream is a timetable.",
+    "facts": [
+      {
+        "label": "Reservoir named for Naraina",
+        "value": "Reported to serve Naraina Vihar, Naraina Village, Inderpuri, Mayapuri, Mansarovar Garden and the MES area",
+        "confidence": "inferred",
+        "sourceIds": [],
+        "note": "Reported in secondary summaries of DJB's ACE (M)-5 zonal sheet. The sheet itself could not be retrieved — see pendingNote. Held at 'inferred' until the document is in hand."
+      },
+      {
+        "label": "Zone",
+        "value": "ACE (M)-5 — covers AC 38 Delhi Cantonment, which contains Naraina Vihar",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-timing-index"
+        ]
+      },
+      {
+        "label": "Typical UGR command area",
+        "value": "≈200,000 people, ≈40,000 connections",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "UGRs in Delhi",
+        "value": "107 hydraulic command zones (TCE 2011), rising to ≈128",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Position",
+        "value": "Approximate",
+        "confidence": "inferred",
+        "sourceIds": [],
+        "note": "No reservoir is mapped in OpenStreetMap anywhere near Naraina. Placed near Naraina Cantt as a marker, not a survey."
+      }
+    ],
+    "pendingNote": "One file resolves this hop: DJB's ACE (M)-5 water supply timing sheet, ace_m_5_0.pdf. It is the only zonal sheet with no Wayback snapshot, and delhijalboard.delhi.gov.in refuses connections from this build environment. Downloading it from a Delhi connection and dropping it in /sources upgrades this hop, the block list and the supply timings from inferred to documented in one step."
+  },
+  {
+    "id": "dma-naraina-vihar",
+    "name": "Naraina Vihar distribution main",
+    "utility": "water",
+    "kind": "distribution",
+    "position": [
+      77.1403175,
+      28.6273375
+    ],
+    "confidence": "inferred",
+    "sourceIds": [
+      "djb-mohua-ppt",
+      "osm-overpass-2026-09"
+    ],
+    "operator": "Delhi Jal Board",
+    "narrative": "The main under your street. DJB is moving to District Metered Areas — a block of 10,000-20,000 people whose inflow is metered so that losses can be pinned down. Non-revenue water across Delhi has run above 50%, which means roughly half of what leaves the reservoir never gets billed to anyone.",
+    "facts": [
+      {
+        "label": "Typical DMA",
+        "value": "10,000-20,000 people, 2,000-4,000 connections",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Non-revenue water",
+        "value": ">50% (20-25% technical, 25-30% commercial)",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      },
+      {
+        "label": "Pipe route under your street",
+        "value": "Not published by any agency",
+        "confidence": "inferred",
+        "sourceIds": [],
+        "note": "DJB's 15,600 km network GIS exists — it was built with NIC — but has never been released."
+      }
+    ],
+    "pendingNote": "Only a DJB connection drawing or an on-site valve-chamber survey resolves the actual route."
+  },
+  {
+    "id": "service-f-block",
+    "name": "Your service connection (the ferrule)",
+    "utility": "water",
+    "kind": "service",
+    "position": [
+      77.1417,
+      28.6268
+    ],
+    "confidence": "inferred",
+    "sourceIds": [
+      "djb-mohua-ppt"
+    ],
+    "narrative": "The ferrule is where Delhi Jal Board stops. DJB's own position is that the service connection from the ferrule to the meter is the consumer's responsibility — so the public water system, 180 km long, formally ends at a brass fitting on the main outside your wall. Everything past it is yours to own and repair.",
+    "facts": [
+      {
+        "label": "Ownership boundary",
+        "value": "DJB's responsibility ends at the ferrule; ferrule-to-meter is the consumer's",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ],
+        "note": "The deck notes DJB was 'considering' taking ownership of ferrule-to-meter; as of the document it had not."
+      },
+      {
+        "label": "Exact location",
+        "value": "Unknown",
+        "confidence": "inferred",
+        "sourceIds": [],
+        "note": "Twenty minutes with a phone camera would make this the first surveyed hop in the chain."
+      }
+    ],
+    "pendingNote": "Photograph the meter and the valve chamber outside the property, drop a pin, and this hop becomes 'surveyed' — the only hop in the chain that you, rather than a document, can settle."
+  },
+  {
+    "id": "storage-house-tank",
+    "name": "Your underground tank and overhead tank",
+    "utility": "water",
+    "kind": "storage",
+    "position": [
+      77.1419,
+      28.6266
+    ],
+    "confidence": "inferred",
+    "narrative": "Almost every Delhi house is its own reservoir operator. Because supply arrives for a couple of hours twice a day, the system only works if each building stores a day of water and pumps it up itself. The tank on your roof is the last hop of a chain that began at a barrage in Haryana.",
+    "sourceIds": [
+      "djb-mohua-ppt"
+    ],
+    "facts": [
+      {
+        "label": "Why storage exists",
+        "value": "Supply is intermittent — typically two windows of 2-3 hours per day",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-ace-m8"
+        ],
+        "note": "Pattern established from the neighbouring ACE (M)-8 zone sheet, where every listed reservoir runs a morning and an evening window."
+      },
+      {
+        "label": "Design demand",
+        "value": "236 LPCD total / 52 GPCD (DJB planning figure)",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      }
+    ],
+    "pendingNote": "Your own tanks, so this is the easiest hop in the chain to settle: capacity in litres, pump timing, and whether the building runs a borewell. Nothing external is needed — only that somebody writes it down."
+  },
+  {
+    "id": "fallback-tanker",
+    "name": "Tanker and borewell fallback",
+    "utility": "water",
+    "kind": "fallback",
+    "position": [
+      77.1395,
+      28.6285
+    ],
+    "confidence": "documented",
+    "sourceIds": [
+      "djb-mohua-ppt"
+    ],
+    "narrative": "The parallel system. About 100 MGD of Delhi's supply — roughly one part in eight — never passes through a treatment plant at all; it comes out of tube wells and Ranney wells. When the piped chain fails, this is what the city falls back on.",
+    "facts": [
+      {
+        "label": "Groundwater share",
+        "value": "≈100 MGD from tube wells and Ranney wells (185 cusecs)",
+        "confidence": "documented",
+        "sourceIds": [
+          "djb-mohua-ppt"
+        ]
+      }
+    ]
+  }
+]

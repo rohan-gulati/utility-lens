@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: dark; }
+  html, body, #root { height: 100%; }
+  body {
+    margin: 0;
+    background: #05080e;
+    color: #e8eef6;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  .panel {
+    background: linear-gradient(180deg, rgba(17, 26, 38, 0.95), rgba(10, 16, 24, 0.95));
+    border: 1px solid rgba(103, 232, 249, 0.14);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 18px 50px -12px rgba(0, 0, 0, 0.85);
+  }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: rgba(103,232,249,.28) transparent; }
+  .scroll-thin::-webkit-scrollbar { width: 7px; height: 7px; }
+  .scroll-thin::-webkit-scrollbar-thumb { background: rgba(103,232,249,.28); border-radius: 99px; }
+}
+
+/* MapLibre chrome, restyled to sit inside the dark UI rather than on top of it. */
+.maplibregl-ctrl-attrib {
+  background: rgba(5, 8, 14, 0.82) !important;
+  color: #7f93a8 !important;
+  font-size: 10px !important;
+}
+.maplibregl-ctrl-attrib a { color: #9fb3c8 !important; }
+.maplibregl-ctrl-group { background: rgba(17, 26, 38, .92) !important; border: 1px solid rgba(103,232,249,.14) !important; }
+.maplibregl-ctrl-group button + button { border-top: 1px solid rgba(103,232,249,.12) !important; }
+.maplibregl-ctrl-group button span { filter: invert(1) hue-rotate(180deg); }
+/* The chain rail owns the bottom of the screen; keep map chrome clear of it. */
+.maplibregl-ctrl-bottom-right { bottom: 176px; }
+.maplibregl-ctrl-bottom-left  { bottom: 176px; }
+
+@keyframes pulse-ring {
+  0%   { transform: scale(0.85); opacity: 0.85; }
+  70%  { transform: scale(2.1);  opacity: 0; }
+  100% { transform: scale(2.1);  opacity: 0; }
+}

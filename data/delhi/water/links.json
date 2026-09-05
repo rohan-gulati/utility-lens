@@ -1,0 +1,75 @@
+[
+  {
+    "id": "link-wjc",
+    "from": "catchment-yamuna-wjc",
+    "to": "conveyance-munak-clc",
+    "kind": "canal",
+    "path": [[77.5556, 30.3607], [77.29, 30.05], [77.05, 29.68], [76.9667, 29.4167]],
+    "confidence": "inferred",
+    "sourceIds": ["djb-mohua-ppt"],
+    "routeNote": "That the Western Yamuna Canal runs from the Tajewala headworks down to Munak is documented. This drawn line is a smooth approximation of that corridor — it is not the surveyed canal alignment.",
+    "lengthNote": "≈120 km along the canal"
+  },
+  {
+    "id": "link-clc-haiderpur",
+    "from": "conveyance-munak-clc",
+    "to": "wtp-haiderpur",
+    "kind": "canal",
+    "path": [[76.9667, 29.4167], [77.02, 29.05], [77.09, 28.85], [77.1374043, 28.7239979]],
+    "confidence": "inferred",
+    "sourceIds": ["djb-mohua-ppt"],
+    "routeNote": "The Munak-to-Haiderpur delivery is documented; the alignment drawn here is approximate. The real channel does not run in straight segments.",
+    "lengthNote": "≈80 km"
+  },
+  {
+    "id": "link-haiderpur-ugr",
+    "from": "wtp-haiderpur",
+    "to": "ugr-naraina-cantt",
+    "kind": "trunk_main",
+    "path": [[77.1374043, 28.7239979], [77.145, 28.688], [77.152, 28.66], [77.1465, 28.638], [77.1428, 28.619]],
+    "confidence": "inferred",
+    "sourceIds": ["djb-mohua-ppt", "djb-ace-m8"],
+    "routeNote": "Wholly invented geometry. No agency publishes trunk main routes. What is documented is that mains of this class exist — DJB reports ≈750 km of trunk mains between 900 and 1,900 mm diameter — and that a main known as the 'Naraina main' is real enough that the neighbouring ACE (M)-8 zone still feeds Subhash Nagar UGR by direct tapping off it. The line drawn here is a plausible corridor, nothing more.",
+    "lengthNote": "≈12 km straight-line; true route unknown"
+  },
+  {
+    "id": "link-ugr-dma",
+    "from": "ugr-naraina-cantt",
+    "to": "dma-naraina-vihar",
+    "kind": "feeder_main",
+    "path": [[77.1428, 28.619], [77.1418, 28.6235], [77.1403175, 28.6273375]],
+    "confidence": "inferred",
+    "sourceIds": ["djb-mohua-ppt"],
+    "routeNote": "Invented geometry. Drawn along the road corridor between the reservoir's approximate position and the centre of Naraina Vihar."
+  },
+  {
+    "id": "link-dma-service",
+    "from": "dma-naraina-vihar",
+    "to": "service-f-block",
+    "kind": "distribution",
+    "path": [[77.1403175, 28.6273375], [77.1411, 28.6271], [77.1417, 28.6268]],
+    "confidence": "inferred",
+    "sourceIds": [],
+    "routeNote": "Invented geometry. Drawn along mapped OpenStreetMap residential ways, on the assumption that distribution mains follow streets — which is usually but not always true."
+  },
+  {
+    "id": "link-service-storage",
+    "from": "service-f-block",
+    "to": "storage-house-tank",
+    "kind": "service",
+    "path": [[77.1417, 28.6268], [77.1419, 28.6266]],
+    "confidence": "inferred",
+    "sourceIds": [],
+    "routeNote": "The few metres from the ferrule into the building. Surveyable on foot; not yet surveyed."
+  },
+  {
+    "id": "link-tanker-storage",
+    "from": "fallback-tanker",
+    "to": "storage-house-tank",
+    "kind": "tanker",
+    "path": [[77.1395, 28.6285], [77.1406, 28.6274], [77.1419, 28.6266]],
+    "confidence": "inferred",
+    "sourceIds": ["djb-mohua-ppt"],
+    "routeNote": "Not a pipe. Represents the road-borne fallback — a tanker run or a borewell — that substitutes for the piped chain when it fails."
+  }
+]

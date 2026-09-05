@@ -1,0 +1,40 @@
+[
+  {
+    "id": "djb-mohua-ppt",
+    "title": "Towards Rational Capital Water Supply System (DJB presentation to MoHUA)",
+    "publisher": "Delhi Jal Board / Ministry of Housing and Urban Affairs",
+    "url": "https://mohua.gov.in/upload/uploadfiles/files/DJB_Water_PPT_1.pdf",
+    "archived": "https://web.archive.org/web/20250505220728/https://mohua.gov.in/upload/uploadfiles/files/DJB_Water_PPT_1.pdf",
+    "published": "c. 2011",
+    "retrieved": "2026-09-05",
+    "note": "95-slide deck by V. K. Babbar, Chief Engineer, DJB. The single best public description of how Delhi's water actually reaches a house: the three-tier WTP -> UGR -> DMA model, raw-water routing through Haryana, and per-plant capacities. Vintage matters — it plans toward 2011 and projects 2021 demand, so treat capacities and shortfall figures as of its date, not as current. Cited here for structure and routing, which have not changed, rather than for present-day numbers."
+  },
+  {
+    "id": "djb-timing-index",
+    "title": "Timing of Water Supply in Delhi — zonal index (ACE zones and their assembly constituencies)",
+    "publisher": "Delhi Jal Board",
+    "url": "https://delhijalboard.delhi.gov.in/jalboard/timing-water-supply-delhi",
+    "archived": "https://web.archive.org/web/20260101010228/https://delhijalboard.delhi.gov.in/jalboard/timing-water-supply-delhi",
+    "retrieved": "2026-09-05",
+    "note": "Maps each Additional Chief Engineer (Maintenance) zone to the assembly constituencies it covers. Establishes that Naraina Vihar, in AC 38 Delhi Cantonment, falls under ACE (M)-5."
+  },
+  {
+    "id": "djb-ace-m8",
+    "title": "Water supply timings for the area under ACE (M)-8",
+    "publisher": "Delhi Jal Board, Office of the Addl. Chief Engineer (M)-8",
+    "url": "https://delhijalboard.delhi.gov.in/sites/default/files/ace_m_8_0.pdf",
+    "archived": "https://web.archive.org/web/20260103100931/https://delhijalboard.delhi.gov.in/sites/default/files/ace_m_8_0.pdf",
+    "published": "2021-11-25",
+    "retrieved": "2026-09-05",
+    "note": "The neighbouring west-Delhi zone, not Naraina's own. Cited for two things it demonstrates: that a trunk main known as the 'Naraina main' exists and still feeds neighbouring zones by direct tapping, and the shape of a real UGR command area — a named reservoir, a two-to-three hour morning and evening window, and an explicit list of blocks."
+  },
+  {
+    "id": "osm-overpass-2026-09",
+    "title": "OpenStreetMap extract — utility features and base map, Delhi NCT and Naraina Vihar",
+    "publisher": "OpenStreetMap contributors (ODbL)",
+    "url": "https://overpass-api.de/",
+    "retrieved": "2026-09-05",
+    "note": "Queried via Overpass on 2026-09-05. Delhi NCT holds 748 utility features in total; the 4.5 x 5.5 km box around Naraina Vihar holds four. Used for the coordinates of Haiderpur, Wazirabad and Sonia Vihar plants, and for the Naraina Vihar centroid. Also the evidence for how little exists: no transformers, pipes or valves are mapped anywhere near the study area.",
+    "archived": "sources/osm/ (the exact Overpass queries, re-runnable)"
+  }
+]
